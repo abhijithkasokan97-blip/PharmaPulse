@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PharmaPulse.Api/PharmaPulse.Api.csproj" />
+  <Project Path="PharmaPulse.Application/PharmaPulse.Application.csproj" />
+  <Project Path="PharmaPulse.Domain/PharmaPulse.Domain.csproj" />
+  <Project Path="PharmaPulse.Infrastructure/PharmaPulse.Infrastructure.csproj" />
+</Solution>
