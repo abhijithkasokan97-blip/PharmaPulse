@@ -1,0 +1,19 @@
+# Build and compilation outputs
+**/bin/
+**/obj/
+**/out/
+
+# IDE / Editor configuration
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Angular / Node build outputs
+**/node_modules/
+**/.angular/
+**/dist/
+
+# Runtime JSON database file
+data/medicines.json
+!data/.gitkeep
