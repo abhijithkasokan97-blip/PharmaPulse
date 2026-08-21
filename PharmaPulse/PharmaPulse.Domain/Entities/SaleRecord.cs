@@ -1,4 +1,4 @@
-namespace PharmaPulse.Core.Entities;
+namespace PharmaPulse.Domain.Entities;
 
 public class SaleRecord
 {

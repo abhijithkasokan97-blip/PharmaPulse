@@ -1,9 +1,9 @@
-using PharmaPulse.Core.Entities;
+using PharmaPulse.Domain.Entities;
 
-namespace PharmaPulse.Core.Interfaces;
+namespace PharmaPulse.Domain.Interfaces;
 
 public interface IMedicineRepository
 {
-    Task<Medicine> GetAllAsync(CancellationToken cancellationToken = default);
+    Task<List<Medicine>> GetAllAsync(string? searchTerm = null, CancellationToken cancellationToken = default);
     Task<Medicine> AddAsync(Medicine medicine, CancellationToken cancellationToken = default);
 }
