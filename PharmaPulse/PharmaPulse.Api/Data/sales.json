@@ -1,0 +1,20 @@
+[
+  {
+    "Id": "11111111-2222-3333-4444-555555555555",
+    "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+    "MedicineName": "Paracetamol 500mg",
+    "QuantitySold": 10,
+    "UnitPrice": 5.50,
+    "TotalAmount": 55.00,
+    "SaleDate": "2026-08-20T10:30:00Z"
+  },
+  {
+    "Id": "66666666-7777-8888-9999-000000000000",
+    "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa2",
+    "MedicineName": "Amoxicillin 250mg",
+    "QuantitySold": 5,
+    "UnitPrice": 12.00,
+    "TotalAmount": 60.00,
+    "SaleDate": "2026-08-21T14:15:00Z"
+  }
+]

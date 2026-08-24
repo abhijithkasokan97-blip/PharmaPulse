@@ -1,6 +1,7 @@
 using PharmaPulse.Api.Middleware;
 using PharmaPulse.Application.Interfaces;
 using PharmaPulse.Application.Services;
+using PharmaPulse.Core.Interfaces;
 using PharmaPulse.Domain.Interfaces;
 using PharmaPulse.Infrastructure.Repositories;
 
@@ -15,8 +16,10 @@ string medicinesPath = Path.Combine(dataDirectory, "medicines.json");
 string salesPath = Path.Combine(dataDirectory, "sales.json");
 
 builder.Services.AddSingleton<IMedicineRepository>(_ => new JsonMedicineRepository(medicinesPath));
+builder.Services.AddSingleton<ISaleRepository>(_ => new JsonSalesRepository(salesPath));
 
 builder.Services.AddScoped<IMedicineService, MedicineService>();
+builder.Services.AddScoped<ISalesService, SaleService>();
 
 builder.Services.AddCors(options =>
 {

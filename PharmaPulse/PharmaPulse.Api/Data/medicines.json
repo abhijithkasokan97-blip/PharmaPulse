@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+    "FullName": "Paracetamol 500mg",
+    "Notes": "Common pain reliever and fever reducer.",
+    "ExpiryDate": "2027-12-31T00:00:00Z",
+    "Quantity": 150,
+    "Price": 5.50,
+    "Brand": "Cipla"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa2",
+    "FullName": "Amoxicillin 250mg",
+    "Notes": "Antibiotic used to treat bacterial infections.",
+    "ExpiryDate": "2026-10-15T00:00:00Z",
+    "Quantity": 80,
+    "Price": 12.00,
+    "Brand": "Sun Pharma"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa3",
+    "FullName": "Ibuprofen 400mg",
+    "Notes": "Nonsteroidal anti-inflammatory drug (NSAID).",
+    "ExpiryDate": "2028-05-20T00:00:00Z",
+    "Quantity": 200,
+    "Price": 8.75,
+    "Brand": "Abbott"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+    "FullName": "Cetirizine 10mg",
+    "Notes": "Antihistamine used to relieve allergy symptoms.",
+    "ExpiryDate": "2027-08-10T00:00:00Z",
+    "Quantity": 45,
+    "Price": 4.20,
+    "Brand": "Dr. Reddy\u0027s"
+  }
+]
