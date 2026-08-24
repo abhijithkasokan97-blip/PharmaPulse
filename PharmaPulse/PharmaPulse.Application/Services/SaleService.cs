@@ -17,10 +17,10 @@ public class SaleService : ISalesService
         return sales.Select(sale => new SaleRecordDto(
             sale.Id,
             sale.MedicineId,
-            sale.MedicineName,
             sale.QuantitySold,
             sale.UnitPrice,
             sale.TotalAmount,
+            sale.SaleDate,
             sale.Timestamp
         )).ToList();
     }

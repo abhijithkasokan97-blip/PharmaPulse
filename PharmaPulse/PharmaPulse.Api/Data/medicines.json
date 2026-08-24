@@ -26,6 +26,19 @@
     "LastUpdatedBy": "Sarah Smith"
   },
   {
+    "Id": "d67e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+    "FullName": "Furosemide 40mg",
+    "Notes": "Loop diuretic used to treat fluid build-up due to heart failure.",
+    "ExpiryDate": "2040-09-14T00:00:00Z",
+    "Quantity": 1,
+    "Price": 5.90,
+    "Brand": "Sanofi",
+    "CreatedOn": "2026-02-12T11:00:00Z",
+    "CreatedBy": "John Doe",
+    "LastUpdatedOn": "2026-08-23T18:45:00Z",
+    "LastUpdatedBy": "John Doe"
+  },
+  {
     "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa3",
     "FullName": "Ibuprofen 400mg",
     "Notes": "Nonsteroidal anti-inflammatory drug (NSAID).",
@@ -323,19 +336,6 @@
     "CreatedBy": "Admin User",
     "LastUpdatedOn": "2026-08-02T11:10:00Z",
     "LastUpdatedBy": "Admin User"
-  },
-  {
-    "Id": "d67e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
-    "FullName": "Furosemide 40mg",
-    "Notes": "Loop diuretic used to treat fluid build-up due to heart failure.",
-    "ExpiryDate": "2040-09-14T00:00:00Z",
-    "Quantity": 1,
-    "Price": 5.90,
-    "Brand": "Sanofi",
-    "CreatedOn": "2026-02-12T11:00:00Z",
-    "CreatedBy": "John Doe",
-    "LastUpdatedOn": "2026-08-23T18:45:00Z",
-    "LastUpdatedBy": "John Doe"
   },
   {
     "Id": "e7f8a9b0-1c2d-3e4f-5a6b-7c8d9e0f1a2b",

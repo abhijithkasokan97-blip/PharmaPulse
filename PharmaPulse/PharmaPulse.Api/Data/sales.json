@@ -1,30 +1,124 @@
 [
   {
-    "Id": "11111111-2222-3333-4444-555555555555",
-    "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+    "Id": "10000000-0000-0000-0000-000000000001",
+    "MedicineId": "8e3ad94d-bd3a-40fd-b30a-bb61a093bed5",
     "MedicineName": "Paracetamol 500mg",
     "QuantitySold": 10,
     "UnitPrice": 5.50,
-    "TotalAmount": 55.00,
     "SaleDate": "2026-08-20T10:30:00Z",
     "CreatedOn": "2026-08-20T10:30:00Z",
     "CreatedBy": "pharmacist_admin",
     "LastModifiedOn": null,
-    "LastModifiedBy": null,
-    "IsDeleted": false
+    "LastModifiedBy": null
+    
   },
   {
-    "Id": "66666666-7777-8888-9999-000000000000",
+    "Id": "10000000-0000-0000-0000-000000000002",
     "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa2",
     "MedicineName": "Amoxicillin 250mg",
-    "QuantitySold": 5,
+    "QuantitySold": 2,
     "UnitPrice": 12.00,
-    "TotalAmount": 60.00,
     "SaleDate": "2026-08-21T14:15:00Z",
     "CreatedOn": "2026-08-21T14:15:00Z",
-    "CreatedBy": "pharmacist_john",
-    "LastModifiedOn": "2026-08-21T16:00:00Z",
-    "LastModifiedBy": "supervisor_mary",
-    "IsDeleted": false
+    "CreatedBy": "Sarah Smith",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+    
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000003",
+    "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa3",
+    "MedicineName": "Ibuprofen 400mg",
+    "QuantitySold": 5,
+    "UnitPrice": 8.75,
+    "SaleDate": "2026-08-22T09:45:00Z",
+    "CreatedOn": "2026-08-22T09:45:00Z",
+    "CreatedBy": "John Doe",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000004",
+    "MedicineId": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+    "MedicineName": "Cetirizine 10mg",
+    "QuantitySold": 3,
+    "UnitPrice": 4.20,
+    "SaleDate": "2026-08-22T16:20:00Z",
+    "CreatedOn": "2026-08-22T16:20:00Z",
+    "CreatedBy": "Sarah Smith",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000005",
+    "MedicineId": "a11b22c3-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+    "MedicineName": "Metformin 500mg",
+    "QuantitySold": 4,
+    "UnitPrice": 9.50,
+    "SaleDate": "2026-08-23T11:10:00Z",
+    "CreatedOn": "2026-08-23T11:10:00Z",
+    "CreatedBy": "pharmacist_admin",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000006",
+    "MedicineId": "b22c33d4-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+    "MedicineName": "Atorvastatin 10mg",
+    "QuantitySold": 1,
+    "UnitPrice": 18.25,
+    "SaleDate": "2026-08-23T15:05:00Z",
+    "CreatedOn": "2026-08-23T15:05:00Z",
+    "CreatedBy": "Sarah Smith",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000007",
+    "MedicineId": "c33d44e5-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+    "MedicineName": "Omeprazole 20mg",
+    "QuantitySold": 2,
+    "UnitPrice": 14.00,
+    "SaleDate": "2026-08-24T08:50:00Z",
+    "CreatedOn": "2026-08-24T08:50:00Z",
+    "CreatedBy": "John Doe",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000008",
+    "MedicineId": "d44e55f6-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+    "MedicineName": "Amlodipine 5mg",
+    "QuantitySold": 3,
+    "UnitPrice": 6.80,
+    "SaleDate": "2026-08-24T10:15:00Z",
+    "CreatedOn": "2026-08-24T10:15:00Z",
+    "CreatedBy": "John Doe",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000009",
+    "MedicineId": "f66a77b8-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+    "MedicineName": "Azithromycin 500mg",
+    "QuantitySold": 1,
+    "UnitPrice": 22.50,
+    "SaleDate": "2026-08-24T12:00:00Z",
+    "CreatedOn": "2026-08-24T12:00:00Z",
+    "CreatedBy": "Sarah Smith",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
+  },
+  {
+    "Id": "10000000-0000-0000-0000-000000000010",
+    "MedicineId": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "MedicineName": "Pantoprazole 40mg",
+    "QuantitySold": 2,
+    "UnitPrice": 13.10,
+    "SaleDate": "2026-08-24T14:30:00Z",
+    "CreatedOn": "2026-08-24T14:30:00Z",
+    "CreatedBy": "pharmacist_admin",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null
   }
 ]
