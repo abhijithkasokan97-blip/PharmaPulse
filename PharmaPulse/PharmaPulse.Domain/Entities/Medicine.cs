@@ -1,6 +1,8 @@
+using PharmaPulse.Domain.Common;
+
 namespace PharmaPulse.Domain.Entities;
 
-public class Medicine
+public class Medicine : AuditEntity
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public string FullName { get; set; } = string.Empty;  

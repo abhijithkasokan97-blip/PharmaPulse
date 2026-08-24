@@ -6,7 +6,12 @@
     "QuantitySold": 10,
     "UnitPrice": 5.50,
     "TotalAmount": 55.00,
-    "SaleDate": "2026-08-20T10:30:00Z"
+    "SaleDate": "2026-08-20T10:30:00Z",
+    "CreatedOn": "2026-08-20T10:30:00Z",
+    "CreatedBy": "pharmacist_admin",
+    "LastModifiedOn": null,
+    "LastModifiedBy": null,
+    "IsDeleted": false
   },
   {
     "Id": "66666666-7777-8888-9999-000000000000",
@@ -15,6 +20,11 @@
     "QuantitySold": 5,
     "UnitPrice": 12.00,
     "TotalAmount": 60.00,
-    "SaleDate": "2026-08-21T14:15:00Z"
+    "SaleDate": "2026-08-21T14:15:00Z",
+    "CreatedOn": "2026-08-21T14:15:00Z",
+    "CreatedBy": "pharmacist_john",
+    "LastModifiedOn": "2026-08-21T16:00:00Z",
+    "LastModifiedBy": "supervisor_mary",
+    "IsDeleted": false
   }
 ]

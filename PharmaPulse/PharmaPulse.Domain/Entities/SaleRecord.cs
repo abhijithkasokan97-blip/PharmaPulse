@@ -1,6 +1,8 @@
+using PharmaPulse.Domain.Common;
+
 namespace PharmaPulse.Domain.Entities;
 
-public class SaleRecord
+public class SaleRecord : AuditEntity
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public Guid MedicineId { get; set; }

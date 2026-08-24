@@ -13,6 +13,15 @@ public class JsonMedicineRepository : IMedicineRepository
     public async Task<Medicine> AddAsync(Medicine medicine, CancellationToken cancellationToken = default)
     {
         var  medicines  =  await _fileStore.ReadAsync(cancellationToken);
+        
+        var userId = "1";
+        var utcNow = DateTime.UtcNow;
+
+        medicine.CreatedBy = userId;
+        medicine.CreatedOn = utcNow;
+        medicine.LastUpdatedBy = userId;
+        medicine.LastUpdatedOn = utcNow;
+        
         medicines.Add(medicine);
         await _fileStore.WriteAsync(medicines, cancellationToken);
         
@@ -28,7 +37,9 @@ public class JsonMedicineRepository : IMedicineRepository
         }
 
         return medicines
-            .Where(m => m.FullName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .Where(m => m.FullName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                m.Brand.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(m => m.LastUpdatedOn)
             .ToList();
     }
 }
