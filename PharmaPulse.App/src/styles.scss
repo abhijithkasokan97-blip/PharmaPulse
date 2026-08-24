@@ -1,0 +1,58 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --app-primary: var(--mat-sys-primary, #3f51b5);
+  --app-primary-light: var(--mat-sys-primary-container, #e8eaf6);
+  --app-accent: var(--mat-sys-tertiary, #ff4081);
+  --app-accent-light: var(--mat-sys-tertiary-container, #fce4ec);
+  
+  --app-text: #111827;
+  --app-text-muted: #6b7280;
+  --app-bg: #ffffff;
+  --app-border: #e5e7eb;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem; 
+  line-height: 1.5;
+  color:  #0f172a;;
+  background-color: #d3d6d8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mat-mdc-dialog-container {
+  .mdc-dialog__surface {
+    padding: 24px !important;
+    border-radius: 12px !important;
+  }
+}
+
+mat-dialog-content.mat-mdc-dialog-content {
+  margin: 16px 0 !important;
+  padding: 0 !important;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+mat-dialog-actions.mat-mdc-dialog-actions {
+  padding: 16px 0 0 0 !important;
+  min-height: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

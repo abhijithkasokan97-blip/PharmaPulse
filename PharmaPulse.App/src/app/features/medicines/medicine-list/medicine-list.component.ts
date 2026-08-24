@@ -1,12 +1,12 @@
 import { CommonModule, DatePipe } from '@angular/common';
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from "@angular/material/icon";
 import { MatTableModule } from '@angular/material/table';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { ADD_MEDICINE_MODAL_WIDTH, MEDICINE_LIST_TABLE_COLUMNS } from './medicine-list.constant';
 import { MedicineViewModel } from '../medicine.interface';
 import { MedicineService } from 'src/app/api/services/medicine.service';
@@ -37,6 +37,7 @@ import { MatInputModule } from '@angular/material/input';
   styleUrls: ['./medicine-list.component.scss']
 })
 export class MedicineListComponent implements OnInit {
+  private destroyRef = inject(DestroyRef);
   private readonly medicineService = inject(MedicineService);
   private readonly dialog = inject(MatDialog);
   public readonly displayedColumns: string[] = MEDICINE_LIST_TABLE_COLUMNS;
@@ -58,7 +59,8 @@ export class MedicineListComponent implements OnInit {
 
     this.searchControl.valueChanges.pipe(
       debounceTime(300),
-      distinctUntilChanged()
+      distinctUntilChanged(),
+      takeUntilDestroyed(this.destroyRef)
     ).subscribe(term => {
       this.loadMedicines(term || '');
     });
@@ -72,7 +74,9 @@ export class MedicineListComponent implements OnInit {
       restoreFocus: true
     });
 
-    dialogRef.afterClosed().subscribe((result: Omit<Medicine, 'id'> | null) => {
+    dialogRef.afterClosed()
+    .pipe(takeUntilDestroyed(this.destroyRef))
+    .subscribe((result: Omit<Medicine, 'id'> | null) => {
       if (result) {
         const createdMedicine: MedicineViewModel = formatMedicines([{
           ...result,
@@ -87,7 +91,9 @@ export class MedicineListComponent implements OnInit {
   public loadMedicines(search: string = ''): void {
     this.isLoading.set(true);
 
-    this.medicineService.getAll(search).subscribe({
+    this.medicineService.getAll(search)
+    .pipe(takeUntilDestroyed(this.destroyRef))
+    .subscribe({
       next: (medicines: Medicine[]) => {
         this.isLoading.set(false);
         const formattedMedicines = formatMedicines(medicines);

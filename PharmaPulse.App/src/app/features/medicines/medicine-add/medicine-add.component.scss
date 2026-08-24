@@ -1,0 +1,21 @@
+.add-medicine-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  padding-top: 0.3125rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.625rem;
+  width: 100%;
+
+  mat-form-field {
+    flex: 1;
+    min-width: 0;
+  }
+}
