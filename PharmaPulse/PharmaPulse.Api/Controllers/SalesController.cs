@@ -6,11 +6,11 @@ namespace PharmaPulse.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class SaleController : ControllerBase
+public class SalesController : ControllerBase
 {
     private readonly ISalesService _saleService;
 
-    public SaleController(ISalesService saleService)
+    public SalesController(ISalesService saleService)
     {
         _saleService = saleService;
     }
