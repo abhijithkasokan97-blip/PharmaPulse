@@ -1,0 +1,60 @@
+.page-container {
+  padding: 1rem;
+  height: 4.25rem;
+}
+
+.header-container {
+  padding: 0.5rem 0.75rem;
+
+  .header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    width: 100%;
+  }
+
+  .page-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+}
+
+.table-container {
+  height: calc(100vh - 8.25rem);
+  overflow: auto;
+  padding: 0 !important;
+
+  .full-width-table {
+    width: 100%;
+  }
+
+  .mat-mdc-header-row {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+
+
+  &::-webkit-scrollbar {
+    width: 0.375rem;
+    height: 0.375rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
