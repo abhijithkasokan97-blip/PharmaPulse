@@ -1,0 +1,24 @@
+<nav class="nav-bar">
+  <div class="brand-logo">
+    <span class="brand-main">Pharma</span><span class="brand-accent">Plus</span>
+  </div>
+
+  <div class="nav-links">
+    <a 
+      class="nav-item" 
+      routerLink="/medicines"
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Medicines
+    </a>
+    <a 
+      class="nav-item" 
+      routerLink="/sale-history"
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Sales History
+    </a>
+  </div>
+</nav>
